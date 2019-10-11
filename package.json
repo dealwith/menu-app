@@ -1,0 +1,15 @@
+{
+  "name": "menuApp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Gleb <krishin@inbox.ru>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js --ignore tests",
+    "dev": ""
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0"
+  }
+}
