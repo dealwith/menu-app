@@ -7,9 +7,13 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js --ignore tests",
-    "dev": ""
+    "client": "npm start --prefix client",
+    "dev": "concurrently -r -k\"yarn run server\" \"yarn run client\""
   },
   "devDependencies": {
     "concurrently": "^5.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0"
   }
 }
