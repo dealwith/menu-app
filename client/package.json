@@ -29,6 +29,7 @@
   "devDependencies": {
     "@types/react": "^16.9.9",
     "@types/react-dom": "^16.9.2",
+    "@types/react-router-dom": "^5.1.0",
     "autoprefixer": "^9.6.5",
     "parcel-bundler": "^1.12.4",
     "prettier": "^1.18.2",
