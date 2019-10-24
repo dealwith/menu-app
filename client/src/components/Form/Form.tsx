@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 
+type Props = {
+  history: Object
+};
 
-const Form = props => {
+const Form = (props: Props) => {
   const url = `http://localhost:5000`;
 
   const [email, setEmail] = useState('');

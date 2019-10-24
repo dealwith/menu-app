@@ -1,24 +1,22 @@
 {
-  "name": "menuApp",
+  "name": "menu-app",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Gleb <krishin@inbox.ru>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js --ignore tests",
-    "client": "npm start --prefix client",
-    "dev": "concurrently -r -k\"yarn run server\" \"yarn run client\""
+    "server": "nodemon index.js",
+    "client": "npm start",
+    "start": "concurrently -r -k\"npm run server\" \"npm run client\""
   },
-  "devDependencies": {
-    "concurrently": "^5.0.0"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "@hapi/hapi": "^18.4.0",
-    "apollo-server-hapi": "^2.9.6",
+    "apollo-server-express": "^2.9.7",
     "bcrypt": "^3.0.6",
-    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "jsonwebtoken": "^8.5.1"
+    "express": "^4.17.1",
+    "hapi": "^18.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.6"
   }
 }
